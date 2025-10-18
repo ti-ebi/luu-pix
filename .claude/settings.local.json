@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(true)",
+      "Bash(for dir in packages/*)",
+      "Bash(do find \"$dir\" -mindepth 1 ! -name package.json -exec rm -rf {} +)",
+      "Bash(done)"
+    ],
+    "deny": []
+  }
+}
